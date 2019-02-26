@@ -41,7 +41,6 @@
 	dropZones.forEach(zone => {
 		zone.addEventListener('dragover', function(e) {
 			e.preventDefault();
-			//e.dataTransfer.setData("text/plain", this.getAttribute('src'));
 			e.dataTransfer.dropEffect = "move";
 		});
 
